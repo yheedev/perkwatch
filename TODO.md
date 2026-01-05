@@ -19,7 +19,7 @@
   - 역할별 필터 (Tank/Damage/Support)
   - 브랜치: `feat/hero-list`
 
-- [x] **feat: 영웅 상세 페이지**
+- [ ] **feat: 영웅 상세 페이지**
   - `/[locale]/hero/[slug]` 페이지 구현
   - 1단계/2단계 특전 표시
   - 특전 정보 렌더링 (이름, 설명)
