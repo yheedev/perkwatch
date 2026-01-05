@@ -53,11 +53,16 @@
   - 브랜치: `feat/dark-mode`
 
 - [ ] **feat: 랜딩페이지**
+
   - `/[locale]` 루트 페이지
   - 20초 영상 사용
   - 프로젝트 소개 텍스트
   - "시작하기" 버튼 → `/hero`
   - 브랜치: `feat/landing-page`
+
+- [ ] **feat: 실제 데이터 작성**
+  - src/data/heroes.ts에 올바른 정보 작성
+  - 실제 정보들과 매칭
 
 ---
 

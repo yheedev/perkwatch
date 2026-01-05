@@ -1,5 +1,7 @@
 import type { Hero } from "@/types/hero";
 
+// TODO: Replace with actual hero images
+// Currently using Kiriko's portrait as a temporary placeholder for all heroes
 const TEMP_IMAGE = "/img/hero/support/kiriko/portrait.webp";
 
 export const heroes: Hero[] = [
@@ -109,7 +111,7 @@ export const heroes: Hero[] = [
     profileImage: TEMP_IMAGE,
   },
 
-  // Damage (20)
+  // Damage (18)
   {
     id: "ashe",
     slug: "ashe",
@@ -254,24 +256,8 @@ export const heroes: Hero[] = [
     icon: TEMP_IMAGE,
     profileImage: TEMP_IMAGE,
   },
-  {
-    id: "dva-damage",
-    slug: "dva-damage",
-    name: { ko: "공격 디바", en: "D.Va Damage", ja: "ダメージD.Va" },
-    role: "damage",
-    icon: TEMP_IMAGE,
-    profileImage: TEMP_IMAGE,
-  },
-  {
-    id: "echo-variant",
-    slug: "echo-variant",
-    name: { ko: "에코 변형", en: "Echo Variant", ja: "エコー変形" },
-    role: "damage",
-    icon: TEMP_IMAGE,
-    profileImage: TEMP_IMAGE,
-  },
 
-  // Support (12)
+  // Support (11)
   {
     id: "ana",
     slug: "ana",
@@ -356,14 +342,6 @@ export const heroes: Hero[] = [
     id: "zenyatta",
     slug: "zenyatta",
     name: { ko: "젠야타", en: "Zenyatta", ja: "ゼニヤッタ" },
-    role: "support",
-    icon: TEMP_IMAGE,
-    profileImage: TEMP_IMAGE,
-  },
-  {
-    id: "symmetra-support",
-    slug: "symmetra-support",
-    name: { ko: "지원 시메트라", en: "Symmetra Support", ja: "サポートシンメトラ" },
     role: "support",
     icon: TEMP_IMAGE,
     profileImage: TEMP_IMAGE,

@@ -2,6 +2,7 @@ import { getTranslation } from "@/lib/i18n-server";
 import { LOCALES, type Locale } from "@/types/i18n";
 import { heroes } from "@/data/heroes";
 import { HeroList } from "@/components/HeroList";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -9,7 +10,21 @@ export async function generateStaticParams() {
 
 export default async function HeroPage({ params }: { params: { locale: string } }) {
   const locale = params.locale as Locale;
+
+  if (!LOCALES.includes(locale)) {
+    notFound();
+  }
+
   const { t } = await getTranslation(locale);
+
+  const translations = {
+    searchPlaceholder: t("heroes.searchPlaceholder"),
+    roles: {
+      tank: t("roles.tank"),
+      damage: t("roles.damage"),
+      support: t("roles.support"),
+    },
+  };
 
   return (
     <div className='min-h-screen p-8'>
@@ -19,7 +34,7 @@ export default async function HeroPage({ params }: { params: { locale: string } 
           <p className='text-xl text-gray-600'>{t("heroes.description")}</p>
         </div>
 
-        <HeroList heroes={heroes} locale={locale} />
+        <HeroList heroes={heroes} locale={locale} translations={translations} />
       </div>
     </div>
   );
