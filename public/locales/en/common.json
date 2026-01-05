@@ -1,0 +1,28 @@
+{
+  "title": "PERKWATCH",
+  "description": "Overwatch Perk Recommendation System",
+  "selectHero": "Select a Hero",
+  "heroes": "Heroes",
+  "perks": "Perks",
+  "minor": "Minor Perks",
+  "major": "Major Perks",
+  "select": "Select",
+  "selected": "Selected",
+  "clear": "Clear",
+  "share": "Share",
+  "roles": {
+    "tank": "Tank",
+    "damage": "Damage",
+    "support": "Support"
+  },
+  "nav": {
+    "home": "Home",
+    "heroes": "Heroes",
+    "contact": "Contact"
+  },
+  "languageSwitcher": {
+    "title": "Select Language",
+    "description": "Choose your preferred language",
+    "cancel": "Cancel"
+  }
+}
