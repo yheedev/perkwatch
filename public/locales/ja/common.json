@@ -2,10 +2,14 @@
   "title": "パークウォッチ",
   "description": "オーバーウォッチパーク推薦システム",
   "selectHero": "ヒーローを選択してください",
-  "heroes": "ヒーロー",
+  "heroes": {
+    "title": "プレイするヒーローを選択してください",
+    "description": "ヒーローを選択してパーク組み合わせを確認",
+    "searchPlaceholder": "ヒーロー検索..."
+  },
   "perks": "パーク",
-  "minor": "メジャー・パーク",
-  "major": "マイナー・パーク",
+  "minor": "マイナー・パーク",
+  "major": "メジャー・パーク",
   "select": "選択",
   "selected": "選択済み",
   "clear": "クリア",
