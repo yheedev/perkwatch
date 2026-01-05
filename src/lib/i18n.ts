@@ -1,13 +1,14 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import { LOCALES, DEFAULT_LOCALE } from "@/types/i18n";
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "ko",
-    supportedLngs: ["ko", "en", "ja"],
+    fallbackLng: DEFAULT_LOCALE,
+    supportedLngs: [...LOCALES],
     ns: ["common"],
     defaultNS: "common",
     debug: false,
