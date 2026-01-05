@@ -1,0 +1,28 @@
+{
+  "title": "パークウォッチ",
+  "description": "オーバーウォッチパーク推薦システム",
+  "selectHero": "ヒーローを選択してください",
+  "heroes": "ヒーロー",
+  "perks": "パーク",
+  "minor": "メジャー・パーク",
+  "major": "マイナー・パーク",
+  "select": "選択",
+  "selected": "選択済み",
+  "clear": "クリア",
+  "share": "共有",
+  "roles": {
+    "tank": "タンク",
+    "damage": "ダメージ",
+    "support": "サポート"
+  },
+  "nav": {
+    "home": "ホーム",
+    "heroes": "ヒーロー",
+    "contact": "お問い合わせ"
+  },
+  "languageSwitcher": {
+    "title": "言語選択",
+    "description": "お好みの言語を選択してください",
+    "cancel": "キャンセル"
+  }
+}

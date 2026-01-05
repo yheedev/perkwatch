@@ -4,7 +4,7 @@
 
 - [x] 타입 정의 (i18n, hero, perk)
 - [x] Mock 데이터 (heroes, perks)
-- [ ] **feat: 다국어 라우팅 설정**
+- [x] **feat: 다국어 라우팅 설정**
   - `middleware.ts` 생성 (언어 감지 및 리다이렉트)
   - `app/[locale]` 폴더 구조 생성
   - 언어별 동적 라우팅 구현
@@ -54,6 +54,7 @@
 
 - [ ] **feat: 랜딩페이지**
   - `/[locale]` 루트 페이지
+  - 20초짜리 영상 사용
   - 프로젝트 소개 텍스트
   - "시작하기" 버튼 → `/hero`
   - 브랜치: `feat/landing-page`
