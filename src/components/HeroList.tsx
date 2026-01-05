@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { Hero } from "@/types/hero";
 import type { Locale } from "@/types/i18n";
 import Link from "next/link";
+import Image from "next/image";
 import koCommon from "@public/locales/ko/common.json";
 import enCommon from "@public/locales/en/common.json";
 import jaCommon from "@public/locales/ja/common.json";
@@ -78,8 +79,15 @@ function HeroCard({ hero, locale }: { hero: Hero; locale: Locale }) {
   return (
     <Link href={`/${locale}/hero/${hero.slug}`}>
       <div className='group cursor-pointer'>
-        <div className='aspect-square bg-gray-200 rounded-lg mb-3 overflow-hidden flex items-center justify-center border-2 border-gray-300 group-hover:border-blue-500 transition-colors'>
-          <img src={hero.icon} alt={hero.name[locale]} className='w-full h-full object-cover' />
+        <div className='aspect-square bg-gray-200 rounded-lg mb-3 overflow-hidden flex items-center justify-center border-2 border-gray-300 group-hover:border-blue-500 transition-colors relative'>
+          <Image
+            src={hero.icon}
+            alt={hero.name[locale]}
+            fill
+            sizes='(max-width: 640px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 50vw, 25vw'
+            className='object-cover'
+            loading='lazy'
+          />
         </div>
         <p className='text-center font-medium group-hover:text-blue-500 transition-colors'>{hero.name[locale]}</p>
       </div>

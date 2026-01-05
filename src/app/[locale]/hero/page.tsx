@@ -1,7 +1,11 @@
 import { getTranslation } from "@/lib/i18n-server";
-import type { Locale } from "@/types/i18n";
+import { LOCALES, type Locale } from "@/types/i18n";
 import { heroes } from "@/data/heroes";
 import { HeroList } from "@/components/HeroList";
+
+export async function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
 
 export default async function HeroPage({ params }: { params: { locale: string } }) {
   const locale = params.locale as Locale;
