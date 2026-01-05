@@ -2,7 +2,11 @@
   "title": "PERKWATCH",
   "description": "오버워치 특전 조합 추천 시스템",
   "selectHero": "영웅을 선택하세요",
-  "heroes": "영웅",
+  "heroes": {
+    "title": "플레이할 영웅을 선택해주세요",
+    "description": "영웅을 선택하여 특전 조합을 확인하세요",
+    "searchPlaceholder": "영웅 검색..."
+  },
   "perks": "특전",
   "minor": "마이너 특전",
   "major": "메이저 특전",

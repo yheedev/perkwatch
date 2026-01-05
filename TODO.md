@@ -12,18 +12,18 @@
 
 ### P1 - 핵심 페이지
 
-- [ ] **feat: 영웅 목록 페이지**
+- [x] **feat: 영웅 목록 페이지**
 
   - `/[locale]/hero` 페이지 구현
   - 영웅 카드 컴포넌트 (기본 스타일만)
   - 역할별 필터 (Tank/Damage/Support)
-  - 브랜치: `feat/hero-list-page`
+  - 브랜치: `feat/hero-list`
 
 - [ ] **feat: 영웅 상세 페이지**
   - `/[locale]/hero/[slug]` 페이지 구현
   - 1단계/2단계 특전 표시
   - 특전 정보 렌더링 (이름, 설명)
-  - 브랜치: `feat/hero-detail-page`
+  - 브랜치: `feat/hero-detail`
 
 ### P1 - 핵심 기능
 
@@ -33,14 +33,14 @@
   - 1단계/2단계 특전 선택 로직 (각 2개 중 1개 선택)
   - 선택/해제 액션
   - 선택된 조합 조회 함수
-  - 브랜치: `feat/perk-selection-store`
+  - 브랜치: `feat/perk-store`
 
 - [ ] **feat: 특전 선택 UI**
   - 특전 카드 컴포넌트
   - 선택/미선택 상태 표시
   - 선택 제한 UI (각 2개 중 1개)
   - 선택된 특전 요약 섹션
-  - 브랜치: `feat/perk-selection-ui`
+  - 브랜치: `feat/perk-ui`
 
 ### P2 - UX 개선
 
@@ -53,11 +53,16 @@
   - 브랜치: `feat/dark-mode`
 
 - [ ] **feat: 랜딩페이지**
+
   - `/[locale]` 루트 페이지
-  - 20초짜리 영상 사용
+  - 20초 영상 사용
   - 프로젝트 소개 텍스트
   - "시작하기" 버튼 → `/hero`
   - 브랜치: `feat/landing-page`
+
+- [ ] **feat: 실제 데이터 작성**
+  - src/data/heroes.ts에 올바른 정보 작성
+  - 실제 정보들과 매칭
 
 ---
 

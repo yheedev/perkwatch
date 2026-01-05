@@ -2,7 +2,11 @@
   "title": "PERKWATCH",
   "description": "Overwatch Perk Recommendation System",
   "selectHero": "Select a Hero",
-  "heroes": "Heroes",
+  "heroes": {
+    "title": "Select a Hero to Play",
+    "description": "Choose a hero to view perk combinations",
+    "searchPlaceholder": "Search heroes..."
+  },
   "perks": "Perks",
   "minor": "Minor Perks",
   "major": "Major Perks",

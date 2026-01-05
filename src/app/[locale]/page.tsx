@@ -1,7 +1,11 @@
 import { getTranslation } from "@/lib/i18n-server";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import type { Locale } from "@/types/i18n";
+import { LOCALES, type Locale } from "@/types/i18n";
 import Link from "next/link";
+
+export async function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
 
 export default async function Home({
   params,
